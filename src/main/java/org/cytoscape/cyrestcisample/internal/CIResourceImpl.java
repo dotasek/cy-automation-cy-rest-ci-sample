@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
 
 import io.swagger.annotations.Api;
 
+@Api
 public class CIResourceImpl implements CIResource
 {
 	private static final Logger logger = LoggerFactory.getLogger(CIResourceImpl.class);
