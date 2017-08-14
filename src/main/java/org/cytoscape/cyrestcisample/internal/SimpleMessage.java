@@ -1,5 +1,7 @@
 package org.cytoscape.cyrestcisample.internal;
 
+import io.swagger.annotations.ApiModel;
+
 /*
  * This is the class returned by our JAX-RS annotated method. To be marshaled automatically into JSON, it needs to be 
  * a POJO (Plain Old Java Object) that follows some key Java Bean Conventions 
@@ -16,6 +18,7 @@ package org.cytoscape.cyrestcisample.internal;
  * If these aren't followed, you will likely get the dreaded Internal Server Error when you access a resource URL that 
  * uses your object.
  */
+@ApiModel(value="Simple Message")
 public class SimpleMessage 
 {
 	String message;
